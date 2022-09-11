@@ -315,9 +315,10 @@ img {
 
   width: 100%;
   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  padding-top: 27px;
-  padding-bottom: 27px;
   background-color: var(--card-functions-bg);
 }
 
@@ -325,7 +326,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-txt-cl);
@@ -372,7 +373,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
 }
-/* socails */
+/* Socails */
 .socials {
   display: flex;
   justify-content: center;
@@ -559,6 +560,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: var(--modal-backdrop-bcgr);
+
+  transition: opacity var(--animation), visibility var(--animation);
 }
 
 .backdrop.is-hidden {
